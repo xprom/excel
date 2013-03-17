@@ -1,0 +1,142 @@
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, 
+fieldset, form, label, legend,
+caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+.line-holder {
+    padding: 5px;
+}
+    .line-holder input {
+        width: 50%;
+        border: solid 1px #999;
+        margin-left: 5px;
+    }
+    .line-holder input#nav {
+        width: 100px;
+        margin-right: 10px;
+    }
+#table-holder {
+    width: 1000px;
+    height: 500px;
+}
+.page {
+    min-width: 1000px;
+}
+.cell {
+    border: solid 1px #ddd;
+    width: 100px;
+    height: 50px;
+    float: left;
+    border-right: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+    .cell input {
+         border: medium none;
+        height: 48px;
+        line-height: 50px;
+        margin: 0;
+        text-align: right;
+        width: 100px;
+    }
+    .cell .seleceted-cell {
+        border: solid 1px black;
+        height: 46px;
+        line-height: 50px;
+        margin: 0;
+        width: 98px;
+    }
+    .numeric-cell {
+        text-align: right;
+    }
+    .formula-cell {
+        background: url('formula.gif') top right no-repeat;
+    }
+    .cell input:hover {
+        background-color: #fffed3;
+    }
+    .cell-last {
+        border-right-width: 1px;
+        border-right-style: solid;
+    }
+    .cell input.text-cell {
+        color: #ccc;
+        text-align: left;
+    }
+    .last-line .cell {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+.void-block {
+    border: solid 1px black;
+    border-right: none;
+    border-bottom: none;
+    background: #999;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+    .void-block2 {
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+    }
+.top-cell {
+    background: #999;
+    text-align: center;
+    width: 100px;
+    float: left;
+    
+    border: solid 1px black;
+    width: 100px;
+    height: 20px;
+    border-right: none;
+    border-bottom: none;
+}
+.line {
+    clear: both;
+    width: 931px;
+}
+#status-line {
+    color: #999;
+    clear: both;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
